@@ -1,0 +1,1256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Quick Repair</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#e0e0e0">
+	<meta name="theme-color" content="#ffffff">
+	<meta name="msapplication-navbutton-color" content="fff">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#fff">
+
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
+	<link rel="stylesheet" href="css/custom-bootstrap-grid.min.css">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body class="home">
+	<div id="loader">
+		<div class="loader__inner"></div>
+	</div>	
+	<header class="main-header home__main-header">		
+		<div class="main-header__wrap-absolute">
+			<div class="top-panel main-header__top-panel">
+				<div class="container">
+					<div class="row">
+						<div class="lg-3 md-4">
+							<div class="top-panel__logo">
+								<a href="#"><img src="img/logo-1.png" alt="" class="top-panel__img"></a>
+							</div>
+						</div>
+						<div class="lg-3 md-4">
+							<div class="top-panel__info-box">
+								<i class="top-panel__icon fa fa-clock-o"></i>
+								<span class="top-panel__info">Mon - Fri ( <span class="top-panel__small-text">am</span> 9:00 - <span class="top-panel__small-text">pm</span> 6:00 )</span>
+							</div>
+						</div>
+						<div class="lg-3 md-4">
+
+							<div class="social-network top-panel__social-network">
+								<ul class="social-network__list">
+									<li class="social-network__item">
+										<a href="#" class="social-network__link social-network__link__theme_menu"><i class="fa fa-vk"></i></a>
+									</li>
+									<li class="social-network__item">
+										<a href="#" class="social-network__link social-network__link__theme_menu"><i class="fa fa-facebook"></i></a>
+									</li>
+									<li class="social-network__item">
+										<a href="#" class="social-network__link social-network__link__theme_menu"><i class="fa fa-instagram"></i></a>
+									</li>
+									<li class="social-network__item">
+										<a href="#" class="social-network__link social-network__link__theme_menu"><i class="fa fa-twitter"></i></a>
+									</li>
+									<li class="social-network__item">
+										<a href="#" class="social-network__link social-network__link__theme_menu"><i class="fa fa-youtube"></i></a>
+									</li>
+								</ul>
+							</div>
+						
+						</div>
+						<div class="lg-3 md-12">
+
+							<div class="top-panel__button-group">
+								<button data-id="modalSignup" class="top-panel__button button button_menu_logreg">Sign Up</button>
+								<button data-id="modalLogin" class="top-panel__button button button_menu_logreg">Log In</button>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>	
+			<nav class="main-menu main-header__main-menu">
+				<div class="container">
+					<div class="main-menu__wrap-content">
+
+						<ul class="main-menu__list">
+							<li class="main-menu__item"><a href="#" class="main-menu__link">Home</a></li>
+							<li class="main-menu__item"><a href="#" class="main-menu__link">Mobile</a></li>
+							<li class="main-menu__item"><a href="#" class="main-menu__link">Notebook</a></li>
+							<li class="main-menu__item"><a href="#" class="main-menu__link">TabletPC</a></li>
+							<li class="main-menu__item"><a href="#" class="main-menu__link">iPhone</a></li>
+							<li class="main-menu__item"><a href="#" class="main-menu__link">iPad</a></li>
+							<li class="main-menu__item"><a href="#" class="main-menu__link">Macbook</a></li>
+							<li class="main-menu__item"><a href="#" class="main-menu__link">Contacts</a></li>
+						</ul>
+
+						<button class="menu-trigger main-menu__trigger" type="button">
+							<span class="menu-trigger__box">
+								<span class="menu-trigger__line"></span>
+							</span>
+						</button>
+
+					</div>
+				</div>
+			</nav>
+
+
+		
+			<nav class="advanced-menu main-header__advanced-menu advanced-menu_hidden">
+				<div class="container">
+					<div class="row">
+						<div class="md-3">
+							<div class="advance-menu__box">
+								<h3 class="advanced-menu__title-partition">Replacement</h3>
+								<ul class="advanced-menu__list">
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">Battery</a></li>
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">Screen</a></li>
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">Sensor</a></li>
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">USB connector</a></li>
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">Speaker</a></li>
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">Camera</a></li>
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">Microphone</a></li>
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">Button</a></li>
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">Case</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="md-3">
+							<div class="advance-menu__box">
+								<h3 class="advanced-menu__title-partition">Mobile Repair</h3>
+								<ul class="advanced-menu__list">
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">Samsung</a></li>
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">Xiaomi</a></li>
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">Meizu</a></li>
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">Sony</a></li>
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">Prestigio</a></li>
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">Alcatel</a></li>
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">LG</a></li>
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">ZTE</a></li>
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">Lenovo</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="md-3">
+							<div class="advance-menu__box">
+								<h3 class="advanced-menu__title-partition">Notebook Repair</h3>
+								<ul class="advanced-menu__list">
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">Asus</a></li>
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">Samsung</a></li>
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">Acer</a></li>
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">Lenovo</a></li>
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">Toshiba</a></li>
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">Xiaomi</a></li>
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">LG</a></li>
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">HP</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="md-3">
+							<div class="advance-menu__box">
+								<h3 class="advanced-menu__title-partition">TablePC Repair</h3>
+								<ul class="advanced-menu__list">
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">Samsung</a></li>
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">Nokia</a></li>
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">Xiaomi</a></li>
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">Meizu</a></li>
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">Sony</a></li>
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">Prestigio</a></li>
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">Lenovo</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="row m-bottom-50">
+						<div class="md-3">
+							<div class="advance-menu__box">
+								<h3 class="advanced-menu__title-partition">iPhone Repair</h3>
+								<ul class="advanced-menu__list">
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">iPhone 8</a></li>
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">iPhone 7</a></li>
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">iPhone 6s Plus</a></li>
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">iPhone 6s</a></li>
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">iPhone 6 Plus</a></li>
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">iPhone 6</a></li>
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">iPhone SE</a></li>
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">iPhone 5s</a></li>
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">iPhone 5</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="md-3">
+							<div class="advance-menu__box">
+								<h3 class="advanced-menu__title-partition">iPad Repair</h3>
+								<ul class="advanced-menu__list">
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">iPad Pro</a></li>
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">iPad Air 2</a></li>
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">iPad Air</a></li>
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">iPad mini 2</a></li>
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">iPad mini</a></li>
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">iPad 4</a></li>
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">iPad 3</a></li>
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">iPad 2</a></li>
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">iPad 1</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="md-3">
+							<div class="advance-menu__box">
+								<h3 class="advanced-menu__title-partition">Macbook Repair</h3>
+								<ul class="advanced-menu__list">
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">Pro 17"</a></li>
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">Pro 15"</a></li>
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">Pro 13"</a></li>
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">Retina 15"</a></li>
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">Retina 13"</a></li>
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">Air 13"</a></li>
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">Air 11"</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="md-3 hiddne-md visible-xs visible-sm">
+							<div class="advance-menu__box">
+								<h3 class="advanced-menu__title-partition">Main Menu</h3>
+								<ul class="advanced-menu__list">
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">Home</a></li>
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">Mobile</a></li>
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">Notebook</a></li>
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">TabletPC</a></li>
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">iPhone</a></li>
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">iPad</a></li>
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">Macbook</a></li>
+									<li class="advanced-menu__item"><a href="#" class="advanced-menu__link">Contacts</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="xs-12">
+							<div class="advance-menu__box">
+								<!-- <h3 class="advanced-menu__title-partition">We are in social</h3> -->
+								<button id="closeAdvancedMenu" class="advanced-menu__button button button_close">Close</button>
+								<div class="social-network advanced-menu__social-network">
+									<ul class="social-network__list">
+										<li class="social-network__item">
+											<a href="#" class="social-network__link social-network__link__theme_menu"><i class="fa fa-vk"></i></a>
+										</li>
+										<li class="social-network__item">
+											<a href="#" class="social-network__link social-network__link__theme_menu"><i class="fa fa-facebook"></i></a>
+										</li>
+										<li class="social-network__item">
+											<a href="#" class="social-network__link social-network__link__theme_menu"><i class="fa fa-instagram"></i></a>
+										</li>
+										<li class="social-network__item">
+											<a href="#" class="social-network__link social-network__link__theme_menu"><i class="fa fa-twitter"></i></a>
+										</li>
+										<li class="social-network__item">
+											<a href="#" class="social-network__link social-network__link__theme_menu"><i class="fa fa-youtube"></i></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</nav>
+	
+		</div>
+		<div class="slider main-header__slider">
+			<div class="slider__single slider__single_is_active" style="background-image: url('img/slide-3.jpg')">
+				<div class="slider__overlay"></div>
+				<div class="slider__content slider__content_left">
+				
+					<div class="container">
+						<div class="row">
+							<div class="md-7">
+								<h3 class="slider__title">Quick repair</h3>
+								<strong class="slider__title-secondary">We Are The Best</strong>
+								<p class="slider__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit perferendis repellendus omnis voluptas accusantium iure dolores, magnam culpa accusamus? Omnis aperiam voluptate reiciendis quo distinctio modi eius laboriosam magnam, repellendus dolor error incidunt, et consectetur laudantium temporibus facere nam! Nemo numquam modi voluptate minima aperiam culpa nisi odit itaque vero?</p>
+								<a href="#" class="slider__button button button_slider">More detailed</a>
+							</div>
+						</div>				
+					</div>
+
+				</div>
+			</div>
+
+			<div class="slider__single" style="background-image: url('img/slide-2.jpg')">
+				<div class="slider__overlay"></div>
+				<div class="slider__content slider__content_right">
+				
+					<div class="container">
+						<div class="row">
+							<div class="md-7 md-offset-5">
+								<h3 class="slider__title">Macbook Repair</h3>
+								<strong class="slider__title-secondary">Quality & Guarantee</strong>
+								<p class="slider__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit perferendis repellendus omnis voluptas accusantium iure dolores, magnam culpa accusamus? Omnis aperiam voluptate reiciendis quo distinctio modi eius laboriosam magnam, repellendus dolor error incidunt?</p>
+								<a href="#" class="slider__button button button_slider">More detailed</a>
+							</div>
+						</div>				
+					</div>
+
+				</div>
+			</div>
+
+			<div class="slider__single" style="background-image: url('img/slide-1.jpg')">
+				<div class="slider__overlay"></div>
+				<div class="slider__content slider__content_left">
+				
+					<div class="container">
+						<div class="row">
+							<div class="md-7">
+								<h3 class="slider__title">Fast iPhone repair</h3>
+								<strong class="slider__title-secondary">Quality & Guarantee</strong>
+								<p class="slider__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit perferendis repellendus omnis voluptas accusantium iure dolores, magnam culpa accusamus? Omnis aperiam voluptate reiciendis quo distinctio modi eius laboriosam magnam, repellendus dolor error incidunt, et consectetur laudantium temporibus facere nam! Nemo numquam modi voluptate minima aperiam culpa nisi odit itaque vero?</p>
+								<a href="#" class="slider__button button button_slider">More detailed</a>
+							</div>
+						</div>				
+					</div>
+
+				</div>
+			</div>
+
+			<div class="slider__single" style="background-image: url('img/slide-2.jpg')">
+				<div class="slider__overlay"></div>
+				<div class="slider__content slider__content_right">
+				
+					<div class="container">
+						<div class="row">
+							<div class="md-7 md-offset-5">
+								<h3 class="slider__title">Macbook Repair</h3>
+								<strong class="slider__title-secondary">Quality & Guarantee</strong>
+								<p class="slider__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit perferendis repellendus omnis voluptas accusantium iure dolores, magnam culpa accusamus? Omnis aperiam voluptate reiciendis quo distinctio modi eius laboriosam magnam, repellendus dolor error incidunt?</p>
+								<a href="#" class="slider__button button button_slider">More detailed</a>
+							</div>
+						</div>				
+					</div>
+
+				</div>
+			</div>
+			
+			<div class="slider__navigation">
+				<span id="prev" class="slider__nav-button slider__nav-button_prev fa fa-angle-left"></span>
+				<span id="next" class="slider__nav-button slider__nav-button_next fa fa-angle-right"></span>
+			</div>
+		</div>	
+	</header>
+
+	<div id="modalSignup" class="modal">
+		<div class="modal__center modal__center_md modal__center_bg_logreg">
+
+			<div class="close modal__close">
+				<span class="close__icon"></span>
+			</div>
+			<!-- <div class="clearfix"></div> -->
+			<div class="logreg-panel modal__logreg-panel">
+
+				<h3 class="logreg-panel__title">Registration</h3>
+
+				<form id="regForm" action="/" class="logreg-form logreg-panel__logreg-form">
+
+					<label for="regName" class="logreg-form__label">Username</label>
+
+					<div id="regNameWrap" class="logreg-form__wrap-input">
+						<input id="regName" type="text" class="logreg-form__input input-text input-text_logreg" placeholder="John777">
+					</div>
+
+					<label for="regEmail" class="logreg-form__label">Email</label>
+
+					<div id="regEmailWrap" class="logreg-form__wrap-input">
+						<input id="regEmail" type="text" class="logreg-form__input input-text input-text_logreg" placeholder="info@example.com">
+					</div>
+
+					<label for="regPassword" class="logreg-form__label">Password</label>
+
+					<div id="regPasswordWrap" class="logreg-form__wrap-input">
+						<input id="regPassword" type="password" class="logreg-form__input input-text input-text_logreg" placeholder="*************">
+					</div>
+
+					<label for="regPasswordRepeat" class="logreg-form__label">Repeat password</label>
+
+					<div id="regPasswordRepeatWrap" class="logreg-form__wrap-input">
+						<input id="regPasswordRepeat" type="password" class="logreg-form__input input-text input-text_logreg" placeholder="*************">
+					</div>
+					
+					<button id="regSubmit" type="submit" class="logreg-form__submit button button_logreg_form">Sign in</button>
+
+					<button type="reset" class="logreg-form__reset button button_reset">Clear form</button>
+
+				</form>
+
+			</div>
+
+		</div>
+	</div>
+
+
+
+	<div id="modalLogin" class="modal">
+		<div class="modal__center modal__center_md modal__center_bg_logreg">
+
+			<div class="close modal__close">
+				<span class="close__icon"></span>
+			</div>
+
+			<div class="logreg-panel modal__logreg-panel">
+
+				<h3 class="logreg-panel__title">Login</h3>
+
+				<form id="logForm" action="/" class="logreg-form logreg-panel__logreg-form">
+
+					<label for="logName" class="logreg-form__label">Username</label>
+
+					<div id="logNameWrap" class="logreg-form__wrap-input">
+						<input id="logName" type="text" class="logreg-form__input input-text input-text_logreg" placeholder="John777">
+					</div>
+
+					<label for="logPassword" class="logreg-form__label">Password</label>
+
+					<div id="logPasswordWrap" class="logreg-form__wrap-input">
+						<input id="logPassword" type="password" class="logreg-form__input input-text input-text_logreg" placeholder="*************">
+					</div>
+
+					<label class="checkbox logreg-form__checkbox">
+					  <input class="checkbox__input" type="checkbox">
+					  <span class="checkbox__custom checkbox__custom_type_common"></span>
+					  <span class="checkbox__text">Remember me</span>
+					</label>
+
+					<button id="logSubmit" type="submit" class="logreg-form__submit button button_logreg_form">Sign in</button>
+
+					<button type="reset" class="logreg-form__reset button button_reset">Clear form</button>
+
+					<p class="logreg-form__text">If you forgot your password click <a href="#" class="logreg-form__link">here</a></p>
+
+				</form>
+
+			</div>
+
+		</div>
+	</div>
+
+
+	<div class="container">
+		<div class="row">
+			<div class="lg-8">
+				<main class="main-content home__main-content">
+					<section class="main-section main-content__main-section">
+						<h1 class="title-h1 section-main__title-h1"><span class="title-h1__first-part">Repair</span> Mobile, Notebook & TabletPC</h1>
+
+						<div class="tabs main-section__tabs">
+							 <ul class="tabs__list">
+							 	<li class="tabs__item tabs__item_is_active" data-tabs="tab-1"><span class="tabs__icon fa fa-android"></span>Modile</li>
+							 	<li class="tabs__item" data-tabs="tab-2"><span class="tabs__icon fa fa-laptop"></span>Notebook</li>
+							 	<li class="tabs__item" data-tabs="tab-3"><span class="tabs__icon fa fa-android"></span>TabletPC</li>
+							 	<li class="tabs__item" data-tabs="tab-4"><span class="tabs__icon fa fa-apple"></span>iPhone</li>
+							 	<li class="tabs__item" data-tabs="tab-5"><span class="tabs__icon fa fa-apple"></span>iPad</li>
+							 	<li class="tabs__item" data-tabs="tab-6"><span class="tabs__icon fa fa-apple"></span>Macbook</li>
+							 </ul>
+							 <div class="tabs__container">
+							 	<div id="tab-1" class="tabs__single tabs__single_is_active">
+									<h3 class="tabs__title">Mobile repair</h3>
+							 		<div class="row">
+							 			<div class="sm-4">
+							 				<article class="hover-immersion tabs__hover-immersion">
+												<a href="#" class="hover-immersion__link-wrap">
+								 					<figure class="hover-immersion__img-first">
+								 						<img src="img/gradient-14.jpg" alt="">
+								 					</figure>
+								 					<figure class="hover-immersion__img-second">
+								 						<img src="img/mobile-repar-1.jpg" alt="">
+								 					</figure>
+								 					<div class="hover-immersion__info">
+														<div class="hover-immersion__info-wrap">
+									 						<h4 class="hover-immersion__title">Samsung</h4>
+									 						<span class="hover-immersion__link button button_hover">More details</span>
+														</div>
+								 					</div>
+								 				</a>
+							 				</article>
+							 			</div>
+							 			<div class="sm-4">
+							 				<article class="hover-immersion tabs__hover-immersion">
+												<a href="#" class="hover-immersion__link-wrap">
+								 					<figure class="hover-immersion__img-first">
+								 						<img src="img/gradient-14.jpg" alt="">
+								 					</figure>
+								 					<figure class="hover-immersion__img-second">
+								 						<img src="img/mobile-repar-1.jpg" alt="">
+								 					</figure>
+								 					<div class="hover-immersion__info">
+														<div class="hover-immersion__info-wrap">
+									 						<h4 class="hover-immersion__title">Xiaomi</h4>
+									 						<span class="hover-immersion__link button button_hover">More details</span>
+														</div>
+								 					</div>
+								 				</a>
+							 				</article>
+							 			</div>
+							 			<div class="sm-4">
+							 				<article class="hover-immersion tabs__hover-immersion">
+												<a href="#" class="hover-immersion__link-wrap">
+								 					<figure class="hover-immersion__img-first">
+								 						<img src="img/gradient-14.jpg" alt="">
+								 					</figure>
+								 					<figure class="hover-immersion__img-second">
+								 						<img src="img/mobile-repar-1.jpg" alt="">
+								 					</figure>
+								 					<div class="hover-immersion__info">
+														<div class="hover-immersion__info-wrap">
+									 						<h4 class="hover-immersion__title">Huawei</h4>
+									 						<span class="hover-immersion__link button button_hover">More details</span>
+														</div>
+								 					</div>
+								 				</a>
+							 				</article>
+							 			</div>
+							 		</div>
+									
+							 		<div class="row">
+							 			<div class="sm-4">
+							 				<article class="hover-immersion tabs__hover-immersion">
+												<a href="#" class="hover-immersion__link-wrap">
+								 					<figure class="hover-immersion__img-first">
+								 						<img src="img/gradient-14.jpg" alt="">
+								 					</figure>
+								 					<figure class="hover-immersion__img-second">
+								 						<img src="img/mobile-repar-1.jpg" alt="">
+								 					</figure>
+								 					<div class="hover-immersion__info">
+														<div class="hover-immersion__info-wrap">
+									 						<h4 class="hover-immersion__title">Nokia</h4>
+									 						<span class="hover-immersion__link button button_hover">More details</span>
+														</div>
+								 					</div>
+								 				</a>
+							 				</article>
+							 			</div>
+							 			<div class="sm-4">
+							 				<article class="hover-immersion tabs__hover-immersion">
+												<a href="#" class="hover-immersion__link-wrap">
+								 					<figure class="hover-immersion__img-first">
+								 						<img src="img/gradient-14.jpg" alt="">
+								 					</figure>
+								 					<figure class="hover-immersion__img-second">
+								 						<img src="img/mobile-repar-1.jpg" alt="">
+								 					</figure>
+								 					<div class="hover-immersion__info">
+														<div class="hover-immersion__info-wrap">
+									 						<h4 class="hover-immersion__title">Meizu</h4>
+									 						<span class="hover-immersion__link button button_hover">More details</span>
+														</div>
+								 					</div>
+								 				</a>
+							 				</article>
+							 			</div>
+							 			<div class="sm-4">
+							 				<article class="hover-immersion tabs__hover-immersion">
+												<a href="#" class="hover-immersion__link-wrap">
+								 					<figure class="hover-immersion__img-first">
+								 						<img src="img/gradient-14.jpg" alt="">
+								 					</figure>
+								 					<figure class="hover-immersion__img-second">
+								 						<img src="img/mobile-repar-1.jpg" alt="">
+								 					</figure>
+								 					<div class="hover-immersion__info">
+														<div class="hover-immersion__info-wrap">
+									 						<h4 class="hover-immersion__title">Sony</h4>
+									 						<span class="hover-immersion__link button button_hover">More details</span>
+														</div>
+								 					</div>
+								 				</a>
+							 				</article>
+							 			</div>
+							 		</div>
+
+							 		<div class="row">
+							 			<div class="sm-4">
+							 				<article class="hover-immersion tabs__hover-immersion">
+												<a href="#" class="hover-immersion__link-wrap">
+								 					<figure class="hover-immersion__img-first">
+								 						<img src="img/gradient-14.jpg" alt="">
+								 					</figure>
+								 					<figure class="hover-immersion__img-second">
+								 						<img src="img/mobile-repar-1.jpg" alt="">
+								 					</figure>
+								 					<div class="hover-immersion__info">
+														<div class="hover-immersion__info-wrap">
+									 						<h4 class="hover-immersion__title">Asus</h4>
+									 						<span class="hover-immersion__link button button_hover">More details</span>
+														</div>
+								 					</div>
+								 				</a>
+							 				</article>
+							 			</div>
+							 			<div class="sm-4">
+							 				<article class="hover-immersion tabs__hover-immersion">
+												<a href="#" class="hover-immersion__link-wrap">
+								 					<figure class="hover-immersion__img-first">
+								 						<img src="img/gradient-14.jpg" alt="">
+								 					</figure>
+								 					<figure class="hover-immersion__img-second">
+								 						<img src="img/mobile-repar-1.jpg" alt="">
+								 					</figure>
+								 					<div class="hover-immersion__info">
+														<div class="hover-immersion__info-wrap">
+									 						<h4 class="hover-immersion__title">Alcatel</h4>
+									 						<span class="hover-immersion__link button button_hover">More details</span>
+														</div>
+								 					</div>
+								 				</a>
+							 				</article>
+							 			</div>
+							 			<div class="sm-4">
+							 				<article class="hover-immersion tabs__hover-immersion">
+												<a href="#" class="hover-immersion__link-wrap">
+								 					<figure class="hover-immersion__img-first">
+								 						<img src="img/gradient-14.jpg" alt="">
+								 					</figure>
+								 					<figure class="hover-immersion__img-second">
+								 						<img src="img/mobile-repar-1.jpg" alt="">
+								 					</figure>
+								 					<div class="hover-immersion__info">
+														<div class="hover-immersion__info-wrap">
+									 						<h4 class="hover-immersion__title">Prestigio</h4>
+									 						<span class="hover-immersion__link button button_hover">More details</span>
+														</div>
+								 					</div>
+								 				</a>
+							 				</article>
+							 			</div>
+							 		</div>
+							 	</div>
+							 	<div id="tab-2" class="tabs__single">
+					 		 		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero adipisci deleniti, beatae dolorem sed eum? Debitis placeat dolore libero animi nostrum modi aliquam, hic sapiente fugit voluptate odit itaque enim at error ipsam quasi suscipit, facere eos commodi, est amet nesciunt quia. Quo velit sapiente qui, sunt, suscipit soluta. Deserunt cum perspiciatis inventore. Ipsam cum ullam, cupiditate aliquam quae asperiores, minima hic quibusdam! Aspernatur tenetur quos at assumenda repellat consectetur, exercitationem hic iure? Magnam nihil fuga tempora voluptate quaerat, provident nisi quos, quibusdam et corporis molestiae esse, autem voluptas earum quas illo, ea nobis. Ipsa inventore quo itaque voluptatum beatae aliquam! Praesentium animi rem magni eius, voluptates accusantium harum est totam sapiente placeat velit labore ducimus consectetur debitis nam sunt modi reiciendis facere, nobis. Blanditiis perferendis, rerum ratione quibusdam, expedita tenetur molestiae accusantium inventore aperiam cum nostrum esse quos alias officia corporis numquam dolores porro, modi sequi. Numquam quaerat, voluptatem cupiditate. Quis temporibus, eum dolor. Praesentium saepe unde recusandae pariatur reiciendis officia, eius enim odit quisquam quo minima ut. Velit ipsa similique, minima quasi ipsam quod deleniti amet ex at eius corporis odit sint delectus id error dolorum mollitia alias impedit saepe atque fugiat quam distinctio rem voluptate. Illum, voluptate.
+							 	</div>
+							 	<div id="tab-3" class="tabs__single">
+							 		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero adipisci deleniti, beatae dolorem sed eum? Debitis placeat dolore libero animi nostrum modi aliquam, hic sapiente fugit voluptate odit itaque enim at error ipsam quasi suscipit, facere eos commodi, est amet nesciunt quia. Quo velit sapiente qui, sunt, suscipit soluta. Deserunt cum perspiciatis inventore. Ipsam cum ullam, cupiditate aliquam quae asperiores, minima hic quibusdam! Aspernatur tenetur quos at assumenda repellat consectetur, exercitationem hic iure? Magnam nihil fuga tempora voluptate quaerat, provident nisi quos, quibusdam et corporis molestiae esse, autem voluptas earum quas illo, ea nobis. Ipsa inventore quo itaque voluptatum beatae aliquam! Praesentium animi rem magni eius, voluptates accusantium harum est totam sapiente placeat velit labore ducimus consectetur debitis nam sunt modi reiciendis facere, nobis. Blanditiis perferendis, rerum ratione quibusdam, expedita tenetur molestiae accusantium inventore aperiam cum nostrum esse quos alias officia corporis numquam dolores porro, modi sequi. Numquam quaerat, voluptatem cupiditate. Quis temporibus, eum dolor. Praesentium saepe unde recusandae pariatur reiciendis officia, eius enim odit quisquam quo minima ut. Velit ipsa similique, minima quasi ipsam quod deleniti amet ex at eius corporis odit sint delectus id error dolorum mollitia alias impedit saepe atque fugiat quam distinctio rem voluptate. Illum, voluptate.
+							 	</div>
+							 	<div id="tab-4" class="tabs__single">
+							 		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero adipisci deleniti, beatae dolorem sed eum? Debitis placeat dolore libero animi nostrum modi aliquam, hic sapiente fugit voluptate odit itaque enim at error ipsam quasi suscipit, facere eos commodi, est amet nesciunt quia. Quo velit sapiente qui, sunt, suscipit soluta. Deserunt cum perspiciatis inventore. Ipsam cum ullam, cupiditate aliquam quae asperiores, minima hic quibusdam! Aspernatur tenetur quos at assumenda repellat consectetur, exercitationem hic iure? Magnam nihil fuga tempora voluptate quaerat, provident nisi quos, quibusdam et corporis molestiae esse, autem voluptas earum quas illo, ea nobis. Ipsa inventore quo itaque voluptatum beatae aliquam! Praesentium animi rem magni eius, voluptates accusantium harum est totam sapiente placeat velit labore ducimus consectetur debitis nam sunt modi reiciendis facere, nobis. Blanditiis perferendis, rerum ratione quibusdam, expedita tenetur molestiae accusantium inventore aperiam cum nostrum esse quos alias officia corporis numquam dolores porro, modi sequi. Numquam quaerat, voluptatem cupiditate. Quis temporibus, eum dolor. Praesentium saepe unde recusandae pariatur reiciendis officia, eius enim odit quisquam quo minima ut. Velit ipsa similique, minima quasi ipsam quod deleniti amet ex at eius corporis odit sint delectus id error dolorum mollitia alias impedit saepe atque fugiat quam distinctio rem voluptate. Illum, voluptate.
+							 	</div>
+							 	<div id="tab-5" class="tabs__single">
+							 		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero adipisci deleniti, beatae dolorem sed eum? Debitis placeat dolore libero animi nostrum modi aliquam, hic sapiente fugit voluptate odit itaque enim at error ipsam quasi suscipit, facere eos commodi, est amet nesciunt quia. Quo velit sapiente qui, sunt, suscipit soluta. Deserunt cum perspiciatis inventore. Ipsam cum ullam, cupiditate aliquam quae asperiores, minima hic quibusdam! Aspernatur tenetur quos at assumenda repellat consectetur, exercitationem hic iure? Magnam nihil fuga tempora voluptate quaerat, provident nisi quos, quibusdam et corporis molestiae esse, autem voluptas earum quas illo, ea nobis. Ipsa inventore quo itaque voluptatum beatae aliquam! Praesentium animi rem magni eius, voluptates accusantium harum est totam sapiente placeat velit labore ducimus consectetur debitis nam sunt modi reiciendis facere, nobis. Blanditiis perferendis, rerum ratione quibusdam, expedita tenetur molestiae accusantium inventore aperiam cum nostrum esse quos alias officia corporis numquam dolores porro, modi sequi. Numquam quaerat, voluptatem cupiditate. Quis temporibus, eum dolor. Praesentium saepe unde recusandae pariatur reiciendis officia, eius enim odit quisquam quo minima ut. Velit ipsa similique, minima quasi ipsam quod deleniti amet ex at eius corporis odit sint delectus id error dolorum mollitia alias impedit saepe atque fugiat quam distinctio rem voluptate. Illum, voluptate.
+							 	</div>
+							 	<div id="tab-6" class="tabs__single">
+							 		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero adipisci deleniti, beatae dolorem sed eum? Debitis placeat dolore libero animi nostrum modi aliquam, hic sapiente fugit voluptate odit itaque enim at error ipsam quasi suscipit, facere eos commodi, est amet nesciunt quia. Quo velit sapiente qui, sunt, suscipit soluta. Deserunt cum perspiciatis inventore. Ipsam cum ullam, cupiditate aliquam quae asperiores, minima hic quibusdam! Aspernatur tenetur quos at assumenda repellat consectetur, exercitationem hic iure? Magnam nihil fuga tempora voluptate quaerat, provident nisi quos, quibusdam et corporis molestiae esse, autem voluptas earum quas illo, ea nobis. Ipsa inventore quo itaque voluptatum beatae aliquam! Praesentium animi rem magni eius, voluptates accusantium harum est totam sapiente placeat velit labore ducimus consectetur debitis nam sunt modi reiciendis facere, nobis. Blanditiis perferendis, rerum ratione quibusdam, expedita tenetur molestiae accusantium inventore aperiam cum nostrum esse quos alias officia corporis numquam dolores porro, modi sequi. Numquam quaerat, voluptatem cupiditate. Quis temporibus, eum dolor. Praesentium saepe unde recusandae pariatur reiciendis officia, eius enim odit quisquam quo minima ut. Velit ipsa similique, minima quasi ipsam quod deleniti amet ex at eius corporis odit sint delectus id error dolorum mollitia alias impedit saepe atque fugiat quam distinctio rem voluptate. Illum, voluptate.
+							 	</div>
+							 </div>
+						</div>
+					</section>
+					<section class="main-section main-content__main-section">
+						<h2 class="title-h2 section-main__title-h2"><span class="title-h2__first-part">Typical</span> device breakdowns</h2>
+						<div class="switch switch_border main-section__switch">
+							<div class="switch__nav-container clearfix">
+								<ul class="switch__nav-list">
+									<li class="switch__nav-item">Select the viewing mode</li>
+									<li id="columnBreakdowns" class="switch__nav-item switch__nav-item_is_active"><span class="switch__nav-icon fa fa-th-large"></span></li>
+									<li id="listBreakdowns" class="switch__nav-item"><span class="switch__nav-icon fa fa-list"></span></li>
+								</ul>
+							</div>
+							<div class="switch__info-container">
+								<div class="row">
+
+									<div class="switchGridColumn md-6">
+
+										<article class="switch-infobox switch__switch-infobox clearfix">
+											<figure class="switch-infobox__img">
+												<img src="img/break-1.jpg" alt="">
+											</figure>
+
+											<div class="switchClassView">
+												<div class="switch-infobox__main-content">
+													<h3 class="switch-infobox__title">Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+													<p class="switch-infobox__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio sed, explicabo itaque optio delectus animi minima aliquid asperiores eaque nulla debitis inventore repellat fugiat </p>
+												</div>
+												<div class="switch-infobox__secondary-content clearfix">
+													<span class="switch-infobox__price"><i class="switch-infobox__icon fa fa-money"></i>from 10 euro</span>
+													<span class="switch-infobox__time"><i class="switch-infobox__icon fa fa-hourglass-start"></i>from 1 hour</span>
+												</div>
+												<a href="#" class="switch-infobox__button button button_common">More details</a>
+											</div>
+
+										</article>
+
+									</div>
+									<div class="switchGridColumn md-6">
+
+										<article class="switch-infobox switch__switch-infobox clearfix">
+											<figure class="switch-infobox__img">
+												<img src="img/break-2.jpg" alt="">
+											</figure>
+
+											<div class="switchClassView">
+												<div class="switch-infobox__main-content">
+													<h3 class="switch-infobox__title">Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+													<p class="switch-infobox__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio sed, explicabo itaque optio</p>
+												</div>
+												<div class="switch-infobox__secondary-content clearfix">
+													<span class="switch-infobox__price"><i class="switch-infobox__icon fa fa-money"></i>from 10 euro</span>
+													<span class="switch-infobox__time"><i class="switch-infobox__icon fa fa-hourglass-start"></i>from 1 hour</span>
+												</div>
+												<a href="#" class="switch-infobox__button button button_common">More details</a>
+											</div>
+
+										</article>
+
+									</div>
+								</div>
+								<div class="row">
+									
+									<div class="switchGridColumn md-6">
+
+										<article class="switch-infobox switch__switch-infobox clearfix">
+											<figure class="switch-infobox__img">
+												<img src="img/break-3.jpg" alt="">
+											</figure>
+
+											<div class="switchClassView">
+												<div class="switch-infobox__main-content">
+													<h3 class="switch-infobox__title">Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+													<p class="switch-infobox__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio sed, explicabo itaque optio delectus animi minima aliquid asperiores eaque nulla debitis inventore repellat fugiat </p>
+												</div>
+												<div class="switch-infobox__secondary-content clearfix">
+													<span class="switch-infobox__price"><i class="switch-infobox__icon fa fa-money"></i>from 10 euro</span>
+													<span class="switch-infobox__time"><i class="switch-infobox__icon fa fa-hourglass-start"></i>from 1 hour</span>
+												</div>
+												<a href="#" class="switch-infobox__button button button_common">More details</a>
+											</div>
+
+										</article>
+
+									</div>
+									<div class="switchGridColumn md-6">
+
+										<article class="switch-infobox switch__switch-infobox clearfix">
+											<figure class="switch-infobox__img">
+												<img src="img/break-1.jpg" alt="">
+											</figure>
+
+											<div class="switchClassView">
+												<div class="switch-infobox__main-content">
+													<h3 class="switch-infobox__title">Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+													<p class="switch-infobox__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio sed, explicabo itaque optio delectus animi minima aliquid</p>
+												</div>
+												<div class="switch-infobox__secondary-content clearfix">
+													<span class="switch-infobox__price"><i class="switch-infobox__icon fa fa-money"></i>from 10 euro</span>
+													<span class="switch-infobox__time"><i class="switch-infobox__icon fa fa-hourglass-start"></i>from 1 hour</span>
+												</div>
+												<a href="#" class="switch-infobox__button button button_common">More details</a>
+											</div>
+
+										</article>
+
+									</div>
+								</div>
+								<div class="row">
+
+									<div class="switchGridColumn md-6">
+
+										<article class="switch-infobox switch__switch-infobox clearfix">
+											<figure class="switch-infobox__img">
+												<img src="img/break-1.jpg" alt="">
+											</figure>
+
+											<div class="switchClassView">
+												<div class="switch-infobox__main-content">
+													<h3 class="switch-infobox__title">Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+													<p class="switch-infobox__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio sed, explicabo itaque optio delectus animi minima aliquid asperiores eaque nulla debitis inventore repellat fugiat </p>
+												</div>
+												<div class="switch-infobox__secondary-content clearfix">
+													<span class="switch-infobox__price"><i class="switch-infobox__icon fa fa-money"></i>from 10 euro</span>
+													<span class="switch-infobox__time"><i class="switch-infobox__icon fa fa-hourglass-start"></i>from 1 hour</span>
+												</div>
+												<a href="#" class="switch-infobox__button button button_common">More details</a>
+											</div>
+
+										</article>
+
+									</div>
+									<div class="switchGridColumn md-6">
+
+										<article class="switch-infobox switch__switch-infobox clearfix">
+											<figure class="switch-infobox__img">
+												<img src="img/break-2.jpg" alt="">
+											</figure>
+
+											<div class="switchClassView">
+												<div class="switch-infobox__main-content">
+													<h3 class="switch-infobox__title">Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+													<p class="switch-infobox__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio sed, explicabo itaque optio</p>
+												</div>
+												<div class="switch-infobox__secondary-content clearfix">
+													<span class="switch-infobox__price"><i class="switch-infobox__icon fa fa-money"></i>from 10 euro</span>
+													<span class="switch-infobox__time"><i class="switch-infobox__icon fa fa-hourglass-start"></i>from 1 hour</span>
+												</div>
+												<a href="#" class="switch-infobox__button button button_common">More details</a>
+											</div>
+
+										</article>
+
+									</div>
+								</div>
+								<div class="row">
+
+									<div class="switchGridColumn md-6">
+
+										<article class="switch-infobox switch__switch-infobox clearfix">
+											<figure class="switch-infobox__img">
+												<img src="img/break-1.jpg" alt="">
+											</figure>
+
+											<div class="switchClassView">
+												<div class="switch-infobox__main-content">
+													<h3 class="switch-infobox__title">Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+													<p class="switch-infobox__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio sed, explicabo itaque optio delectus animi minima aliquid asperiores eaque nulla debitis inventore repellat fugiat </p>
+												</div>
+												<div class="switch-infobox__secondary-content clearfix">
+													<span class="switch-infobox__price"><i class="switch-infobox__icon fa fa-money"></i>from 10 euro</span>
+													<span class="switch-infobox__time"><i class="switch-infobox__icon fa fa-hourglass-start"></i>from 1 hour</span>
+												</div>
+												<a href="#" class="switch-infobox__button button button_common">More details</a>
+											</div>
+
+										</article>
+
+									</div>
+									<div class="switchGridColumn md-6">
+
+										<article class="switch-infobox switch__switch-infobox clearfix">
+											<figure class="switch-infobox__img">
+												<img src="img/break-2.jpg" alt="">
+											</figure>
+
+											<div class="switchClassView">
+												<div class="switch-infobox__main-content">
+													<h3 class="switch-infobox__title">Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+													<p class="switch-infobox__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio sed, explicabo itaque optio</p>
+												</div>
+												<div class="switch-infobox__secondary-content clearfix">
+													<span class="switch-infobox__price"><i class="switch-infobox__icon fa fa-money"></i>from 10 euro</span>
+													<span class="switch-infobox__time"><i class="switch-infobox__icon fa fa-hourglass-start"></i>from 1 hour</span>
+												</div>
+												<a href="#" class="switch-infobox__button button button_common">More details</a>
+											</div>
+
+										</article>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section class="main-section main-content__main-section">
+						<h2 class="title-h2 section-main__title-h2"><span class="title-h2__first-part">Our</span> advantages</h2>
+						<div class="row">
+							<div class="md-6">
+								<article class="icon-left-infobox main-section__icon-left-infobox clearfix">
+									<span class="icon-left-infobox__icon fa fa-users"></span>
+									<div class="icon-left-infobox__content">
+										<h3 class="icon-left-infobox__title">Best masters</h3>
+										<p class="icon-left-infobox__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque quibusdam in officia. Illum maiores commodi qui, aliquam minima assumenda sit!</p>
+									</div>
+								</article>
+							</div>
+							<div class="md-6">
+								<article class="icon-left-infobox main-section__icon-left-infobox clearfix">
+									<span class="icon-left-infobox__icon fa fa-search"></span>
+									<div class="icon-left-infobox__content">
+										<h3 class="icon-left-infobox__title">Free diagnostics</h3>
+										<p class="icon-left-infobox__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque quibusdam in officia. Illum maiores commodi qui, aliquam minima assumenda sit!</p>
+									</div>
+								</article>
+							</div>
+						</div>
+						<div class="row">
+							<div class="md-6">
+								<article class="icon-left-infobox main-section__icon-left-infobox clearfix">
+									<span class="icon-left-infobox__icon fa fa-shield"></span>
+									<div class="icon-left-infobox__content">
+										<h3 class="icon-left-infobox__title">Guarantee</h3>
+										<p class="icon-left-infobox__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque quibusdam in officia. Illum maiores commodi qui, aliquam minima assumenda sit!</p>
+									</div>
+								</article>
+							</div>
+							<div class="md-6">
+								<article class="icon-left-infobox main-section__icon-left-infobox clearfix">
+									<span class="icon-left-infobox__icon fa fa-cogs"></span>
+									<div class="icon-left-infobox__content">
+										<h3 class="icon-left-infobox__title">Original parts</h3>
+										<p class="icon-left-infobox__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque quibusdam in officia. Illum maiores commodi qui, aliquam minima assumenda sit!</p>
+									</div>
+								</article>
+							</div>
+						</div>
+						<div class="row">
+							<div class="md-6">
+								<article class="icon-left-infobox main-section__icon-left-infobox clearfix">
+									<span class="icon-left-infobox__icon fa fa-automobile"></span>
+									<div class="icon-left-infobox__content">
+										<h3 class="icon-left-infobox__title">Free delivery</h3>
+										<p class="icon-left-infobox__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque quibusdam in officia. Illum maiores commodi qui, aliquam minima assumenda sit!</p>
+									</div>
+								</article>
+							</div>
+							<div class="md-6">
+								<article class="icon-left-infobox main-section__icon-left-infobox clearfix">
+									<span class="icon-left-infobox__icon fa fa-lock"></span>
+									<div class="icon-left-infobox__content">
+										<h3 class="icon-left-infobox__title">Information safety</h3>
+										<p class="icon-left-infobox__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque quibusdam in officia. Illum maiores commodi qui, aliquam minima assumenda sit!</p>
+									</div>
+								</article>
+							</div>
+						</div>
+						<div class="row">
+							<div class="md-6">
+								<article class="icon-left-infobox main-section__icon-left-infobox clearfix">
+									<span class="icon-left-infobox__icon fa fa-clock-o"></span>
+									<div class="icon-left-infobox__content">
+										<h3 class="icon-left-infobox__title">Quick repairs</h3>
+										<p class="icon-left-infobox__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque quibusdam in officia. Illum maiores commodi qui, aliquam minima assumenda sit!</p>
+									</div>
+								</article>
+							</div>
+							<div class="md-6">
+								<article class="icon-left-infobox main-section__icon-left-infobox clearfix">
+									<span class="icon-left-infobox__icon fa fa-heart"></span>
+									<div class="icon-left-infobox__content">
+										<h3 class="icon-left-infobox__title">We love what we do</h3>
+										<p class="icon-left-infobox__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque quibusdam in officia. Illum maiores commodi qui, aliquam minima assumenda sit!</p>
+									</div>
+								</article>
+							</div>
+						</div>
+					</section>
+					<section class="main-section main-content__main-section">
+
+						<h2 class="title-h2 section-main__title-h2"><span class="title-h2__first-part">Our</span> best masters</h2>
+						<div class="row">
+							<div class="md-6 md-push-6">
+								<article class="card main-section__card">
+									<span class="card__toggle card__toggle_is_active fa fa-th"></span>
+									<img class="card__img" src="img/team-4.png" alt="">
+
+									<h4 class="card__name">Zara Allford</h4>
+									<span class="card__experience">4 years of experience</span>
+									<div class="card__description card__description_is_active">
+										<ul class="card__list">
+											<li class="card__item"><i class="card__item-icon fa fa-female"></i>Age - 25 years</li>
+											<li class="card__item"><i class="card__item-icon fa fa-graduation-cap"></i>Education - higher</li>
+											<li class="card__item"><i class="card__item-icon fa fa-star"></i>Position - assistant master</li>
+											<li class="card__item"><i class="card__item-icon fa fa-cogs"></i>Renovated - 50 devices</li>
+											<li class="card__item"><i class="card__item-icon fa fa-heart"></i>Hobby - dancing</li>
+										</ul>
+									</div>
+								</article>
+							</div>
+							<div class="md-6 md-pull-6">
+								<article class="card main-section__card card__small">
+									<span class="card__toggle fa fa-th"></span>
+									<img class="card__img" src="img/team-3.png" alt="">
+
+									<h4 class="card__name">Jonn Smit</h4>
+									<span class="card__experience">7 years of experience</span>
+									<div class="card__description">
+										<ul class="card__list">
+											<li class="card__item"><i class="card__item-icon fa fa-male"></i>Age - 30 years</li>
+											<li class="card__item"><i class="card__item-icon fa fa-graduation-cap"></i>Education - higher</li>
+											<li class="card__item"><i class="card__item-icon fa fa-star"></i>Position - chief master</li>
+											<li class="card__item"><i class="card__item-icon fa fa-cogs"></i>Renovated - 200 devices</li>
+											<li class="card__item"><i class="card__item-icon fa fa-heart"></i>Hobby - football</li>
+										</ul>
+									</div>						
+								</article>
+							</div>
+						</div>
+						<div class="row">
+							<div class="md-6">
+								<article class="card main-section__card card__small">
+									<span class="card__toggle fa fa-th"></span>
+									<img class="card__img" src="img/team-4.png" alt="">
+
+									<h4 class="card__name">Zara Allford</h4>
+									<span class="card__experience">4 years of experience</span>
+									<div class="card__description">
+										<ul class="card__list">
+											<li class="card__item"><i class="card__item-icon fa fa-male"></i>Age - 25 years</li>
+											<li class="card__item"><i class="card__item-icon fa fa-graduation-cap"></i>Education - higher</li>
+											<li class="card__item"><i class="card__item-icon fa fa-star"></i>Position - assistant master</li>
+											<li class="card__item"><i class="card__item-icon fa fa-cogs"></i>Renovated - 50 devices</li>
+											<li class="card__item"><i class="card__item-icon fa fa-heart"></i>Hobby - dancing</li>
+										</ul>
+									</div>
+								</article>
+							</div>
+							<div class="md-6">
+								<article class="card main-section__card card__small">
+									<span class="card__toggle fa fa-th"></span>
+									<img class="card__img" src="img/team-3.png" alt="">
+
+									<h4 class="card__name">Jonn Smit</h4>
+									<span class="card__experience">7 years of experience</span>
+									<div class="card__description">
+										<ul class="card__list">
+											<li class="card__item"><i class="card__item-icon fa fa-male"></i>Age - 30 years</li>
+											<li class="card__item"><i class="card__item-icon fa fa-graduation-cap"></i>Education - higher</li>
+											<li class="card__item"><i class="card__item-icon fa fa-star"></i>Position - chief master</li>
+											<li class="card__item"><i class="card__item-icon fa fa-cogs"></i>Renovated - 200 devices</li>
+											<li class="card__item"><i class="card__item-icon fa fa-heart"></i>Hobby - football</li>
+										</ul>
+									</div>						
+								</article>
+							</div>
+						</div>
+					</section>
+				</main>
+			</div>
+			<div class="lg-4">
+				<aside class="main-sidebar home__main-sidebar">
+					<article class="follow main-sidebar__follow">
+						<h2 class="follow__title">Follow Us</h2>
+						<div class="social-network follow__social-network">
+							<ul class="social-network__list">
+								<li class="social-network__item">
+									<a href="#" class="social-network__link social-network__link__common"><i class="fa fa-vk"></i></a>
+								</li>
+								<li class="social-network__item">
+									<a href="#" class="social-network__link social-network__link__common"><i class="fa fa-facebook"></i></a>
+								</li>
+								<li class="social-network__item">
+									<a href="#" class="social-network__link social-network__link__common"><i class="fa fa-instagram"></i></a>
+								</li>
+								<li class="social-network__item">
+									<a href="#" class="social-network__link social-network__link__common"><i class="fa fa-twitter"></i></a>
+								</li>
+								<li class="social-network__item">
+									<a href="#" class="social-network__link social-network__link__common"><i class="fa fa-youtube"></i></a>
+								</li>
+							</ul>
+						</div>
+						<form action="/" id="newsletterForm" class="newsletter-form follow__newsletter-form clearfix">
+							<span class="newsletter-form__icon fa fa-envelope"></span>
+							<div class="newsletter-form__content">
+								<h3 class="newsletter-form__title">Newsletter</h3>
+								<p class="newsletter-form__text">Enter your email address to subscribe our notification of our new post & features by email.</p>
+							</div>
+							<input id="newsletterEmail" type="email" class="newsletter-form__input input-text input-text_bdrs">
+							<button type="submit" class="newsletter-form__submit button button_common">Subscribe</button>
+						</form>
+					</article>					
+					<nav class="tags main-sidebar__tags">
+						<h2 class="tags__title">Tags Cloud</h2>
+						<ul class="tags__list">
+							<li class="tags__item"><a href="#" class="tags__link">Safety glass</a></li>
+							<li class="tags__item"><a href="#" class="tags__link">Front Camera</a></li>
+							<li class="tags__item"><a href="#" class="tags__link">Back Camera</a></li>
+							<li class="tags__item"><a href="#" class="tags__link">Sensor</a></li>
+							<li class="tags__item"><a href="#" class="tags__link">Battery</a></li>
+							<li class="tags__item"><a href="#" class="tags__link">Ear speaker</a></li>
+							<li class="tags__item"><a href="#" class="tags__link">Bottom speaker</a></li>
+							<li class="tags__item"><a href="#" class="tags__link">Microphone</a></li>
+							<li class="tags__item"><a href="#" class="tags__link">Case</a></li>
+							<li class="tags__item"><a href="#" class="tags__link">USB2.0</a></li>
+							<li class="tags__item"><a href="#" class="tags__link">USB3.0</a></li>
+							<li class="tags__item"><a href="#" class="tags__link">USB mobile</a></li>
+							<li class="tags__item"><a href="#" class="tags__link">Matrix</a></li>
+							<li class="tags__item"><a href="#" class="tags__link">Buttons</a></li>
+							<li class="tags__item"><a href="#" class="tags__link">Keyboard</a></li>
+							<li class="tags__item"><a href="#" class="tags__link">Cooler</a></li>
+							<li class="tags__item"><a href="#" class="tags__link">Safety glass</a></li>
+							<li class="tags__item"><a href="#" class="tags__link">Battery</a></li>
+							<li class="tags__item"><a href="#" class="tags__link">Sensor</a></li>
+							<li class="tags__item"><a href="#" class="tags__link">Front Camera</a></li>
+							<li class="tags__item"><a href="#" class="tags__link">Back Camera</a></li>
+							<li class="tags__item"><a href="#" class="tags__link">Ear speaker</a></li>
+							<li class="tags__item"><a href="#" class="tags__link">Bottom speaker</a></li>
+							<li class="tags__item"><a href="#" class="tags__link">Microphone</a></li>
+							<li class="tags__item"><a href="#" class="tags__link">Case</a></li>
+							<li class="tags__item"><a href="#" class="tags__link">USB2.0</a></li>
+							<li class="tags__item"><a href="#" class="tags__link">USB3.0</a></li>
+							<li class="tags__item"><a href="#" class="tags__link">USB mobile</a></li>
+							<li class="tags__item"><a href="#" class="tags__link">Matrix</a></li>
+							<li class="tags__item"><a href="#" class="tags__link">Buttons</a></li>
+							<li class="tags__item"><a href="#" class="tags__link">Keyboard</a></li>
+							<li class="tags__item"><a href="#" class="tags__link">Cooler</a></li>
+							<li class="tags__item"><a href="#" class="tags__link">Safety glass</a></li>
+							<li class="tags__item"><a href="#" class="tags__link">Battery</a></li>
+							<li class="tags__item"><a href="#" class="tags__link">Sensor</a></li>
+							<li class="tags__item"><a href="#" class="tags__link">Front Camera</a></li>
+							<li class="tags__item"><a href="#" class="tags__link">Back Camera</a></li>
+							<li class="tags__item"><a href="#" class="tags__link">Ear speaker</a></li>
+							<li class="tags__item"><a href="#" class="tags__link">Microphone</a></li>
+							<li class="tags__item"><a href="#" class="tags__link">Case</a></li>
+							<li class="tags__item"><a href="#" class="tags__link">Bottom speaker</a></li>
+							<li class="tags__item"><a href="#" class="tags__link">USB2.0</a></li>
+							<li class="tags__item"><a href="#" class="tags__link">USB3.0</a></li>
+							<li class="tags__item"><a href="#" class="tags__link">USB mobile</a></li>
+							<li class="tags__item"><a href="#" class="tags__link">Matrix</a></li>
+							<li class="tags__item"><a href="#" class="tags__link">Buttons</a></li>
+							<li class="tags__item"><a href="#" class="tags__link">Keyboard</a></li>
+							<li class="tags__item"><a href="#" class="tags__link">Cooler</a></li>
+							<li class="tags__item"><a href="#" class="tags__link">Keyboard</a></li>
+							<li class="tags__item"><a href="#" class="tags__link">Cooler</a></li>
+							<li class="tags__item"><a href="#" class="tags__link">Safety glass</a></li>
+							<li class="tags__item"><a href="#" class="tags__link">Battery</a></li>
+							<li class="tags__item"><a href="#" class="tags__link">Sensor</a></li>
+						</ul>
+					</nav>					
+					<nav class="categories main-sidebar__categories">
+						<h2 class="categories__title">Categories</h2>
+						<ul class="categories__list">
+							<li class="categories__item"><span data-cat-trigger="catDropdown-1" class="categories__trigger"><i class="categories__icon fa fa-android"></i>Mobile repair</span>
+
+								<ul id="catDropdown-1" class="categories__dropdown-list categories__dropdown-list_is_active">
+									<li class="categories__dropdown-item"><a href="#" class="categories__dropdown-link">Samsung</a></li>
+									<li class="categories__dropdown-item"><a href="#" class="categories__dropdown-link">Xiaomi</a></li>
+									<li class="categories__dropdown-item"><a href="#" class="categories__dropdown-link">Huawei</a></li>
+									<li class="categories__dropdown-item"><a href="#" class="categories__dropdown-link">Nokia</a></li>
+									<li class="categories__dropdown-item"><a href="#" class="categories__dropdown-link">Meizu</a></li>
+									<li class="categories__dropdown-item"><a href="#" class="categories__dropdown-link">Sony</a></li>
+									<li class="categories__dropdown-item"><a href="#" class="categories__dropdown-link">Asus</a></li>
+									<li class="categories__dropdown-item"><a href="#" class="categories__dropdown-link">Alcatel</a></li>
+									<li class="categories__dropdown-item"><a href="#" class="categories__dropdown-link">Prestigio</a></li>
+								</ul>
+
+							</li>
+							<li class="categories__item"><span data-cat-trigger="catDropdown-2" class="categories__trigger"><i class="categories__icon fa fa-laptop"></i>Notebook repair</span>
+								
+								<ul id="catDropdown-2" class="categories__dropdown-list">
+									<li class="categories__dropdown-item"><a href="#" class="categories__dropdown-link">Samsung</a></li>
+									<li class="categories__dropdown-item"><a href="#" class="categories__dropdown-link">Xiaomi</a></li>
+									<li class="categories__dropdown-item"><a href="#" class="categories__dropdown-link">Toshiba</a></li>
+									<li class="categories__dropdown-item"><a href="#" class="categories__dropdown-link">Asus</a></li>
+									<li class="categories__dropdown-item"><a href="#" class="categories__dropdown-link">HP</a></li>
+									<li class="categories__dropdown-item"><a href="#" class="categories__dropdown-link">Sony</a></li>
+									<li class="categories__dropdown-item"><a href="#" class="categories__dropdown-link">LG</a></li>
+									<li class="categories__dropdown-item"><a href="#" class="categories__dropdown-link">Acer</a></li>
+								</ul>
+
+							</li>
+							<li class="categories__item"><span data-cat-trigger="catDropdown-3" class="categories__trigger"><i class="categories__icon fa fa-android"></i>TablePC repair</span>
+								
+								<ul id="catDropdown-3" class="categories__dropdown-list">
+									<li class="categories__dropdown-item"><a href="#" class="categories__dropdown-link">Samsung</a></li>
+									<li class="categories__dropdown-item"><a href="#" class="categories__dropdown-link">Xiaomi</a></li>
+									<li class="categories__dropdown-item"><a href="#" class="categories__dropdown-link">Huawei</a></li>
+									<li class="categories__dropdown-item"><a href="#" class="categories__dropdown-link">Nokia</a></li>
+									<li class="categories__dropdown-item"><a href="#" class="categories__dropdown-link">Meizu</a></li>
+									<li class="categories__dropdown-item"><a href="#" class="categories__dropdown-link">Sony</a></li>
+									<li class="categories__dropdown-item"><a href="#" class="categories__dropdown-link">Asus</a></li>
+									<li class="categories__dropdown-item"><a href="#" class="categories__dropdown-link">Alcatel</a></li>
+									<li class="categories__dropdown-item"><a href="#" class="categories__dropdown-link">Prestigio</a></li>
+								</ul>
+							</li>
+							<li class="categories__item"><span data-cat-trigger="catDropdown-4" class="categories__trigger"><i class="categories__icon fa fa-apple"></i>iPhone repair</span>
+
+								<ul id="catDropdown-4" class="categories__dropdown-list">
+									<li class="categories__dropdown-item"><a href="#" class="categories__dropdown-link">iPhone 8</a></li>
+									<li class="categories__dropdown-item"><a href="#" class="categories__dropdown-link">iPhone 7</a></li>
+									<li class="categories__dropdown-item"><a href="#" class="categories__dropdown-link">iPhone 6s+</a></li>
+									<li class="categories__dropdown-item"><a href="#" class="categories__dropdown-link">iPhone 6s</a></li>
+									<li class="categories__dropdown-item"><a href="#" class="categories__dropdown-link">iPhone 6+</a></li>
+									<li class="categories__dropdown-item"><a href="#" class="categories__dropdown-link">iPhone 6</a></li>
+									<li class="categories__dropdown-item"><a href="#" class="categories__dropdown-link">iPhone 5s</a></li>
+									<li class="categories__dropdown-item"><a href="#" class="categories__dropdown-link">iPhone 5c</a></li>
+									<li class="categories__dropdown-item"><a href="#" class="categories__dropdown-link">iPhone 5</a></li>
+								</ul>
+							</li>
+							<li class="categories__item"><span data-cat-trigger="catDropdown-5" class="categories__trigger"><i class="categories__icon fa fa-apple"></i>iPad repair</span>
+								
+								<ul id="catDropdown-5" class="categories__dropdown-list">
+									<li class="categories__dropdown-item"><a href="#" class="categories__dropdown-link">iPad Pro</a></li>
+									<li class="categories__dropdown-item"><a href="#" class="categories__dropdown-link">iPad Air 2</a></li>
+									<li class="categories__dropdown-item"><a href="#" class="categories__dropdown-link">iPad Air</a></li>
+									<li class="categories__dropdown-item"><a href="#" class="categories__dropdown-link">iPad mini 2</a></li>
+									<li class="categories__dropdown-item"><a href="#" class="categories__dropdown-link">iPad mini</a></li>
+									<li class="categories__dropdown-item"><a href="#" class="categories__dropdown-link">iPad 4</a></li>
+									<li class="categories__dropdown-item"><a href="#" class="categories__dropdown-link">iPad 3</a></li>
+									<li class="categories__dropdown-item"><a href="#" class="categories__dropdown-link">iPad 2</a></li>
+									<li class="categories__dropdown-item"><a href="#" class="categories__dropdown-link">iPad 1</a></li>
+								</ul>
+							</li>
+							<li class="categories__item"><span data-cat-trigger="catDropdown-6" class="categories__trigger"><i class="categories__icon fa fa-apple"></i>Macbook repair</span>
+								
+								<ul id="catDropdown-6" class="categories__dropdown-list">
+									<li class="categories__dropdown-item"><a href="#" class="categories__dropdown-link">Pro 17"</a></li>
+									<li class="categories__dropdown-item"><a href="#" class="categories__dropdown-link">Pro 15"</a></li>
+									<li class="categories__dropdown-item"><a href="#" class="categories__dropdown-link">Pro 13"</a></li>
+									<li class="categories__dropdown-item"><a href="#" class="categories__dropdown-link">Retina 15"</a></li>
+									<li class="categories__dropdown-item"><a href="#" class="categories__dropdown-link">Retina 13"</a></li>
+									<li class="categories__dropdown-item"><a href="#" class="categories__dropdown-link">Air 13"</a></li>
+									<li class="categories__dropdown-item"><a href="#" class="categories__dropdown-link">Air 11"</a></li>
+								</ul>
+							</li>
+						</ul>
+					</nav>					
+				</aside>
+			</div>
+		</div>
+	</div>
+	
+	
+	<footer class="main-footer home__main-footer">	
+		<div class="main-footer__content">
+			<div class="container">
+				<div class="row">
+					<div class="md-6">
+						<span class="main-footer__signature">Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						<h3 class="main-footer__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, quam, repellat? Ratione odio omnis natus.</h3>
+						<p class="main-footer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, iure eligendi. Nam numquam incidunt veritatis. Animi similique deleniti reiciendis odit omnis dolorem distinctio praesentium itaque repellat quaerat, quod minus vero, sapiente voluptatem fugiat deserunt ex dolores sint officiis totam aspernatur possimus incidunt. Natus itaque, corporis, ex odit quam ipsum aperiam.</p>
+						<div class="row">
+							<div class="md-6">
+								<span class="main-footer__icon fa fa-bar-chart"></span>
+								<h4 class="main-footer__secondary-title">Lorem ipsum dolor sit.</h4>
+								<p class="main-footer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium sint autem explicabo aliquam, molestiae quisquam deleniti nesciunt quasi, numquam ipsa.</p>
+							</div>
+							<div class="md-6">
+								<span class="main-footer__icon fa fa-balance-scale"></span>
+								<h4 class="main-footer__secondary-title">Lorem ipsum dolor sit.</h4>
+								<p class="main-footer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium sint autem explicabo aliquam, molestiae quisquam deleniti nesciunt quasi, numquam ipsa.</p>
+							</div>
+						</div>
+						<a href="#" class="main-footer__button button button_common">More details</a>
+					</div>
+					<div class="md-6 hidden-sm hidden-xs">
+						<img src="img/iphone-6.png" alt="">
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<div class="main-footer__copyright">
+			<p class="main-footer__copuright-text"><i class="main-footer__copyright-icon fa fa-copyright"></i> All rights reserved | 2018</p>
+		</div>
+	</footer>
+
+
+	<div class="scrollup">
+		<span class="scrollup__icon fa fa-angle-up"></span>
+	</div>	
+
+	
+
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/common.js"></script>
+
+</body>
+</html>
